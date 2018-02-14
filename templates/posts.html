@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="container" align="center">
+    <h1>{{blog_title}}</h1>
+    <a href="/post/new/{{blog_id}}"><button class="btn btn primary">Write new Post</button></a>
+    {% if posts|length > 0 %}
+    {% for post in posts %}
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.content }}</p>
+    <P>{{ post.author }}</P>
+    <hr>
+    {% endfor%}
+    {% else: %}
+         <h3>There are no post yet!</h3>
+    {% endif %}
+</div>
+{% endblock %}
