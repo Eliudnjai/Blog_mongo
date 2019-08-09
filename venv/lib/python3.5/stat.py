@@ -1,1 +1,1 @@
-/home/eliudnjai/anaconda3/lib/python3.5/stat.py
+C:/home/eliudnjai/anaconda3/lib/python3.5/stat.py
